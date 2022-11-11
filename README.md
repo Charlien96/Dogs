@@ -18,4 +18,4 @@ The user can also select the "Dog Breed" option
 to return to the screen displaying the
 different breeds of dogs to select a
 different breed they wish to view pictures of
-![Uploading Screenshot 2022-11-11 at 16.02.17.png…]()
+![Upload<img width="404" alt="Screenshot 2022-11-11 at 16 02 17" src="https://user-images.githubusercontent.com/55395408/201381647-f36d4b4c-5441-4097-a1f2-28af08d1e2bc.png">
