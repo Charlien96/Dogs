@@ -14,6 +14,11 @@
 		84906789291E952100E791D5 /* DogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84906788291E952100E791D5 /* DogsTests.swift */; };
 		84906793291E952100E791D5 /* DogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84906792291E952100E791D5 /* DogsUITests.swift */; };
 		84906795291E952100E791D5 /* DogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84906794291E952100E791D5 /* DogsUITestsLaunchTests.swift */; };
+		849067A3291E973D00E791D5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A2291E973D00E791D5 /* EndPoint.swift */; };
+		849067A5291E977900E791D5 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A4291E977900E791D5 /* RequestMethod.swift */; };
+		849067A7291E97A100E791D5 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A6291E97A100E791D5 /* RequestError.swift */; };
+		849067A9291E97CB00E791D5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A8291E97CB00E791D5 /* HTTPClient.swift */; };
+		849067AB291E97F000E791D5 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067AA291E97F000E791D5 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		8490678E291E952100E791D5 /* DogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84906792291E952100E791D5 /* DogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITests.swift; sourceTree = "<group>"; };
 		84906794291E952100E791D5 /* DogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849067A2291E973D00E791D5 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		849067A4291E977900E791D5 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		849067A6291E97A100E791D5 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		849067A8291E97CB00E791D5 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		849067AA291E97F000E791D5 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		84906776291E951E00E791D5 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				849067A1291E970E00E791D5 /* Network */,
 				84906777291E951E00E791D5 /* DogsApp.swift */,
 				84906779291E951E00E791D5 /* ContentView.swift */,
 				8490677B291E952000E791D5 /* Assets.xcassets */,
@@ -125,6 +136,18 @@
 				84906794291E952100E791D5 /* DogsUITestsLaunchTests.swift */,
 			);
 			path = DogsUITests;
+			sourceTree = "<group>";
+		};
+		849067A1291E970E00E791D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				849067A2291E973D00E791D5 /* EndPoint.swift */,
+				849067A4291E977900E791D5 /* RequestMethod.swift */,
+				849067A6291E97A100E791D5 /* RequestError.swift */,
+				849067A8291E97CB00E791D5 /* HTTPClient.swift */,
+				849067AA291E97F000E791D5 /* NetworkClient.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849067A5291E977900E791D5 /* RequestMethod.swift in Sources */,
+				849067A7291E97A100E791D5 /* RequestError.swift in Sources */,
+				849067A9291E97CB00E791D5 /* HTTPClient.swift in Sources */,
+				849067A3291E973D00E791D5 /* EndPoint.swift in Sources */,
+				849067AB291E97F000E791D5 /* NetworkClient.swift in Sources */,
 				8490677A291E951E00E791D5 /* ContentView.swift in Sources */,
 				84906778291E951E00E791D5 /* DogsApp.swift in Sources */,
 			);
