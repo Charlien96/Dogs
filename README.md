@@ -1,5 +1,7 @@
 # Dogs
 
+This project was created using SwiftUI in MVVM Architecture, Combine was used for data binding, Async await for downloading the images and requires XCode14 and iOS 16 to run.
+
 The purpose of this project is to allow the user to
 select a specific breed of dogs from a list
 
