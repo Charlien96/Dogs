@@ -23,7 +23,7 @@ struct BreedView: View {
                      }
                  }
              }
-             .navigationTitle("Dog Breeds")
+             .navigationTitle("dog_breeds")
          }
          .onAppear {
              breedViewModel.getBreeds()

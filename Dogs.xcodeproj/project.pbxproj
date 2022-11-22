@@ -35,6 +35,9 @@
 		849067C9291E9CA400E791D5 /* MockBreedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067C8291E9CA400E791D5 /* MockBreedClient.swift */; };
 		849067CB291E9CD800E791D5 /* BreedDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067CA291E9CD800E791D5 /* BreedDetailsViewModelTests.swift */; };
 		849067CD291E9D0B00E791D5 /* MockBreedDetailsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067CC291E9D0B00E791D5 /* MockBreedDetailsClient.swift */; };
+		84A8CEBE292D37E1000EC905 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A8CEC0292D37E1000EC905 /* Localizable.strings */; };
+		84A8CEC4292D41D8000EC905 /* URLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8CEC3292D41D8000EC905 /* URLResponse+Extension.swift */; };
+		84A8CEC6292D422C000EC905 /* TestURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8CEC5292D422C000EC905 /* TestURLResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,10 @@
 		849067C8291E9CA400E791D5 /* MockBreedClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreedClient.swift; sourceTree = "<group>"; };
 		849067CA291E9CD800E791D5 /* BreedDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		849067CC291E9D0B00E791D5 /* MockBreedDetailsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreedDetailsClient.swift; sourceTree = "<group>"; };
+		84A8CEBF292D37E1000EC905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84A8CEC2292D391E000EC905 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84A8CEC3292D41D8000EC905 /* URLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLResponse+Extension.swift"; sourceTree = "<group>"; };
+		84A8CEC5292D422C000EC905 /* TestURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURLResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +143,7 @@
 		84906776291E951E00E791D5 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				84A8CEBB292D37CB000EC905 /* Localization */,
 				849067B9291E9A3800E791D5 /* BreedDetails */,
 				849067AC291E985400E791D5 /* Breeds */,
 				849067A1291E970E00E791D5 /* Network */,
@@ -163,6 +171,7 @@
 				849067C8291E9CA400E791D5 /* MockBreedClient.swift */,
 				849067CA291E9CD800E791D5 /* BreedDetailsViewModelTests.swift */,
 				849067CC291E9D0B00E791D5 /* MockBreedDetailsClient.swift */,
+				84A8CEC5292D422C000EC905 /* TestURLResponse.swift */,
 			);
 			path = DogsTests;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 				849067A6291E97A100E791D5 /* RequestError.swift */,
 				849067A8291E97CB00E791D5 /* HTTPClient.swift */,
 				849067AA291E97F000E791D5 /* NetworkClient.swift */,
+				84A8CEC3292D41D8000EC905 /* URLResponse+Extension.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -212,6 +222,14 @@
 				849067C4291E9B9900E791D5 /* BreedViewMoreEndPoint.swift */,
 			);
 			path = BreedDetails;
+			sourceTree = "<group>";
+		};
+		84A8CEBB292D37CB000EC905 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				84A8CEC0292D37E1000EC905 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +318,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 8490676B291E951D00E791D5;
 			productRefGroup = 84906775291E951E00E791D5 /* Products */;
@@ -319,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8490677F291E952000E791D5 /* Preview Assets.xcassets in Resources */,
+				84A8CEBE292D37E1000EC905 /* Localizable.strings in Resources */,
 				8490677C291E952000E791D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +380,7 @@
 				8490677A291E951E00E791D5 /* ContentView.swift in Sources */,
 				84906778291E951E00E791D5 /* DogsApp.swift in Sources */,
 				849067C1291E9B3B00E791D5 /* BreedDetailsResponse.swift in Sources */,
+				84A8CEC4292D41D8000EC905 /* URLResponse+Extension.swift in Sources */,
 				849067BF291E9AC800E791D5 /* BreedDetailsEndPoint.swift in Sources */,
 				849067B4291E991700E791D5 /* Breed.swift in Sources */,
 				849067C5291E9B9900E791D5 /* BreedViewMoreEndPoint.swift in Sources */,
@@ -372,6 +393,7 @@
 			files = (
 				849067CB291E9CD800E791D5 /* BreedDetailsViewModelTests.swift in Sources */,
 				849067C9291E9CA400E791D5 /* MockBreedClient.swift in Sources */,
+				84A8CEC6292D422C000EC905 /* TestURLResponse.swift in Sources */,
 				849067CD291E9D0B00E791D5 /* MockBreedDetailsClient.swift in Sources */,
 				84906789291E952100E791D5 /* DogsTests.swift in Sources */,
 				849067C7291E9C6000E791D5 /* BreedsViewModelTests.swift in Sources */,
@@ -402,11 +424,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		84A8CEC0292D37E1000EC905 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A8CEBF292D37E1000EC905 /* en */,
+				84A8CEC2292D391E000EC905 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		84906796291E952100E791D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -467,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

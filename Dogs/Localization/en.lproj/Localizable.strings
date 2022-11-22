@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Dogs
+
+  Created by Charles on 11/11/2022.
+  
+*/
+
+"dog_breeds" = "Dog Breeds";
+"view_more" = "View More";

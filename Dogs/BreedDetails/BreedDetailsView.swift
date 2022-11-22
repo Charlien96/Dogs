@@ -34,7 +34,7 @@ struct BreedDetailsView: View {
             }
         }.navigationTitle(breed.name)
             .toolbar {
-                Button("View More") {
+                Button("view_more") {
                     breedDetailViewModel.getMoreBreedsImages(breed: breed)
                 }
             }
