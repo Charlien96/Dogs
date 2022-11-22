@@ -14,6 +14,27 @@
 		84906789291E952100E791D5 /* DogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84906788291E952100E791D5 /* DogsTests.swift */; };
 		84906793291E952100E791D5 /* DogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84906792291E952100E791D5 /* DogsUITests.swift */; };
 		84906795291E952100E791D5 /* DogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84906794291E952100E791D5 /* DogsUITestsLaunchTests.swift */; };
+		849067A3291E973D00E791D5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A2291E973D00E791D5 /* EndPoint.swift */; };
+		849067A5291E977900E791D5 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A4291E977900E791D5 /* RequestMethod.swift */; };
+		849067A7291E97A100E791D5 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A6291E97A100E791D5 /* RequestError.swift */; };
+		849067A9291E97CB00E791D5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067A8291E97CB00E791D5 /* HTTPClient.swift */; };
+		849067AB291E97F000E791D5 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067AA291E97F000E791D5 /* NetworkClient.swift */; };
+		849067AE291E988400E791D5 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067AD291E988400E791D5 /* BreedViewModel.swift */; };
+		849067B0291E98C100E791D5 /* BreedEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067AF291E98C100E791D5 /* BreedEndPoint.swift */; };
+		849067B2291E98F600E791D5 /* BreedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067B1291E98F600E791D5 /* BreedResponse.swift */; };
+		849067B4291E991700E791D5 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067B3291E991700E791D5 /* Breed.swift */; };
+		849067B6291E994100E791D5 /* BreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067B5291E994100E791D5 /* BreedView.swift */; };
+		849067B8291E997A00E791D5 /* BreedViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067B7291E997A00E791D5 /* BreedViewRow.swift */; };
+		849067BB291E9A6700E791D5 /* BreedDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067BA291E9A6700E791D5 /* BreedDetailsView.swift */; };
+		849067BD291E9AA300E791D5 /* BreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067BC291E9AA300E791D5 /* BreedDetailsViewModel.swift */; };
+		849067BF291E9AC800E791D5 /* BreedDetailsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067BE291E9AC800E791D5 /* BreedDetailsEndPoint.swift */; };
+		849067C1291E9B3B00E791D5 /* BreedDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067C0291E9B3B00E791D5 /* BreedDetailsResponse.swift */; };
+		849067C3291E9B7100E791D5 /* BreedDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067C2291E9B7100E791D5 /* BreedDetails.swift */; };
+		849067C5291E9B9900E791D5 /* BreedViewMoreEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067C4291E9B9900E791D5 /* BreedViewMoreEndPoint.swift */; };
+		849067C7291E9C6000E791D5 /* BreedsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067C6291E9C6000E791D5 /* BreedsViewModelTests.swift */; };
+		849067C9291E9CA400E791D5 /* MockBreedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067C8291E9CA400E791D5 /* MockBreedClient.swift */; };
+		849067CB291E9CD800E791D5 /* BreedDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067CA291E9CD800E791D5 /* BreedDetailsViewModelTests.swift */; };
+		849067CD291E9D0B00E791D5 /* MockBreedDetailsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849067CC291E9D0B00E791D5 /* MockBreedDetailsClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +65,27 @@
 		8490678E291E952100E791D5 /* DogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84906792291E952100E791D5 /* DogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITests.swift; sourceTree = "<group>"; };
 		84906794291E952100E791D5 /* DogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849067A2291E973D00E791D5 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		849067A4291E977900E791D5 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		849067A6291E97A100E791D5 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		849067A8291E97CB00E791D5 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		849067AA291E97F000E791D5 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		849067AD291E988400E791D5 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
+		849067AF291E98C100E791D5 /* BreedEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedEndPoint.swift; sourceTree = "<group>"; };
+		849067B1291E98F600E791D5 /* BreedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedResponse.swift; sourceTree = "<group>"; };
+		849067B3291E991700E791D5 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		849067B5291E994100E791D5 /* BreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedView.swift; sourceTree = "<group>"; };
+		849067B7291E997A00E791D5 /* BreedViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewRow.swift; sourceTree = "<group>"; };
+		849067BA291E9A6700E791D5 /* BreedDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsView.swift; sourceTree = "<group>"; };
+		849067BC291E9AA300E791D5 /* BreedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewModel.swift; sourceTree = "<group>"; };
+		849067BE291E9AC800E791D5 /* BreedDetailsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsEndPoint.swift; sourceTree = "<group>"; };
+		849067C0291E9B3B00E791D5 /* BreedDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsResponse.swift; sourceTree = "<group>"; };
+		849067C2291E9B7100E791D5 /* BreedDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetails.swift; sourceTree = "<group>"; };
+		849067C4291E9B9900E791D5 /* BreedViewMoreEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewMoreEndPoint.swift; sourceTree = "<group>"; };
+		849067C6291E9C6000E791D5 /* BreedsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModelTests.swift; sourceTree = "<group>"; };
+		849067C8291E9CA400E791D5 /* MockBreedClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreedClient.swift; sourceTree = "<group>"; };
+		849067CA291E9CD800E791D5 /* BreedDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		849067CC291E9D0B00E791D5 /* MockBreedDetailsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreedDetailsClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +136,9 @@
 		84906776291E951E00E791D5 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				849067B9291E9A3800E791D5 /* BreedDetails */,
+				849067AC291E985400E791D5 /* Breeds */,
+				849067A1291E970E00E791D5 /* Network */,
 				84906777291E951E00E791D5 /* DogsApp.swift */,
 				84906779291E951E00E791D5 /* ContentView.swift */,
 				8490677B291E952000E791D5 /* Assets.xcassets */,
@@ -114,6 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				84906788291E952100E791D5 /* DogsTests.swift */,
+				849067C6291E9C6000E791D5 /* BreedsViewModelTests.swift */,
+				849067C8291E9CA400E791D5 /* MockBreedClient.swift */,
+				849067CA291E9CD800E791D5 /* BreedDetailsViewModelTests.swift */,
+				849067CC291E9D0B00E791D5 /* MockBreedDetailsClient.swift */,
 			);
 			path = DogsTests;
 			sourceTree = "<group>";
@@ -125,6 +174,44 @@
 				84906794291E952100E791D5 /* DogsUITestsLaunchTests.swift */,
 			);
 			path = DogsUITests;
+			sourceTree = "<group>";
+		};
+		849067A1291E970E00E791D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				849067A2291E973D00E791D5 /* EndPoint.swift */,
+				849067A4291E977900E791D5 /* RequestMethod.swift */,
+				849067A6291E97A100E791D5 /* RequestError.swift */,
+				849067A8291E97CB00E791D5 /* HTTPClient.swift */,
+				849067AA291E97F000E791D5 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		849067AC291E985400E791D5 /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				849067AD291E988400E791D5 /* BreedViewModel.swift */,
+				849067AF291E98C100E791D5 /* BreedEndPoint.swift */,
+				849067B1291E98F600E791D5 /* BreedResponse.swift */,
+				849067B3291E991700E791D5 /* Breed.swift */,
+				849067B5291E994100E791D5 /* BreedView.swift */,
+				849067B7291E997A00E791D5 /* BreedViewRow.swift */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		849067B9291E9A3800E791D5 /* BreedDetails */ = {
+			isa = PBXGroup;
+			children = (
+				849067BA291E9A6700E791D5 /* BreedDetailsView.swift */,
+				849067BC291E9AA300E791D5 /* BreedDetailsViewModel.swift */,
+				849067BE291E9AC800E791D5 /* BreedDetailsEndPoint.swift */,
+				849067C0291E9B3B00E791D5 /* BreedDetailsResponse.swift */,
+				849067C2291E9B7100E791D5 /* BreedDetails.swift */,
+				849067C4291E9B9900E791D5 /* BreedViewMoreEndPoint.swift */,
+			);
+			path = BreedDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +344,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849067B8291E997A00E791D5 /* BreedViewRow.swift in Sources */,
+				849067A5291E977900E791D5 /* RequestMethod.swift in Sources */,
+				849067BD291E9AA300E791D5 /* BreedDetailsViewModel.swift in Sources */,
+				849067B2291E98F600E791D5 /* BreedResponse.swift in Sources */,
+				849067A7291E97A100E791D5 /* RequestError.swift in Sources */,
+				849067B0291E98C100E791D5 /* BreedEndPoint.swift in Sources */,
+				849067A9291E97CB00E791D5 /* HTTPClient.swift in Sources */,
+				849067C3291E9B7100E791D5 /* BreedDetails.swift in Sources */,
+				849067A3291E973D00E791D5 /* EndPoint.swift in Sources */,
+				849067AB291E97F000E791D5 /* NetworkClient.swift in Sources */,
+				849067B6291E994100E791D5 /* BreedView.swift in Sources */,
+				849067AE291E988400E791D5 /* BreedViewModel.swift in Sources */,
+				849067BB291E9A6700E791D5 /* BreedDetailsView.swift in Sources */,
 				8490677A291E951E00E791D5 /* ContentView.swift in Sources */,
 				84906778291E951E00E791D5 /* DogsApp.swift in Sources */,
+				849067C1291E9B3B00E791D5 /* BreedDetailsResponse.swift in Sources */,
+				849067BF291E9AC800E791D5 /* BreedDetailsEndPoint.swift in Sources */,
+				849067B4291E991700E791D5 /* Breed.swift in Sources */,
+				849067C5291E9B9900E791D5 /* BreedViewMoreEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849067CB291E9CD800E791D5 /* BreedDetailsViewModelTests.swift in Sources */,
+				849067C9291E9CA400E791D5 /* MockBreedClient.swift in Sources */,
+				849067CD291E9D0B00E791D5 /* MockBreedDetailsClient.swift in Sources */,
 				84906789291E952100E791D5 /* DogsTests.swift in Sources */,
+				849067C7291E9C6000E791D5 /* BreedsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
