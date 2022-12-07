@@ -8,7 +8,7 @@
 import XCTest
 @testable import Dogs
 
-final class TestURLResponse: XCTestCase {
+final class URLResponseTests: XCTestCase {
 
     
     func testUnKnownResponse() throws {

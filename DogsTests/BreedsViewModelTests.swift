@@ -20,7 +20,7 @@ final class BreedsViewModelTests: XCTestCase {
         
         let breedViewModel = BreedViewModel(
             httpClient: mockBreedClient)
-        breedViewModel.getBreeds()
+        breedViewModel.getBreeds(endPoint: BreedEndPoint())
         
         let asyncWaitDuration = 0.5 // <= could be even less than 0.5 seconds even
         DispatchQueue.main.asyncAfter(deadline: .now() + asyncWaitDuration) {
@@ -48,7 +48,7 @@ final class BreedsViewModelTests: XCTestCase {
         
         let breedViewModel = BreedViewModel(
             httpClient: mockBreedClient)
-        breedViewModel.getBreeds()
+        breedViewModel.getBreeds(endPoint: BreedEndPoint())
         
         let asyncWaitDuration = 0.5 // <= could be even less than 0.5 seconds even
         DispatchQueue.main.asyncAfter(deadline: .now() + asyncWaitDuration) {

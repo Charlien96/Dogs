@@ -30,12 +30,13 @@ struct BreedDetailsView: View {
                 }
             }
             .onAppear {
-                breedDetailViewModel.getBreedDetails(breed: breed)
+                breedDetailViewModel.getBreedDetails(endPoint:  BreedDetailsEndPoint(breedName: breed.name)
+)
             }
         }.navigationTitle(breed.name)
             .toolbar {
                 Button("view_more") {
-                    breedDetailViewModel.getMoreBreedsImages(breed: breed)
+                    breedDetailViewModel.getMoreBreedsImages(endPoint: BreedViewMoreEndPoint(breedName: breed.name))
                 }
             }
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HTTPClient {
+protocol HTTPClient: JsonParser {
     func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async -> Result<T, RequestError>
 }
 
@@ -16,31 +16,16 @@ extension HTTPClient {
         endpoint: Endpoint,
         responseModel: T.Type
     ) async -> Result<T, RequestError> {
-        var urlComponents = URLComponents()
-        urlComponents.scheme = endpoint.scheme
-        urlComponents.host = endpoint.host
-        urlComponents.path = endpoint.path
         
-        guard let url = urlComponents.url else {
-            return .failure(.invalidURL)
+        guard let request = URLRequest.getRequest(endpoint: endpoint) else {
+            return .failure(RequestError.invalidURL)
         }
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = endpoint.method.rawValue
-        request.allHTTPHeaderFields = endpoint.header
-
-        if let body = endpoint.body {
-            request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
-        }
-        
         do {
             let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
             
             do {
                 try response.validateResponse()
-                guard let decodedResponse = try? JSONDecoder().decode(responseModel, from: data) else {
-                    return .failure(.decode)
-                }
+                let decodedResponse = try decode(data: data, responseModel: responseModel)
                 return .success(decodedResponse)
             }catch {
                 return .failure(error as! RequestError)

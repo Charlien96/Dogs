@@ -26,7 +26,7 @@ struct BreedView: View {
              .navigationTitle("dog_breeds")
          }
          .onAppear {
-             breedViewModel.getBreeds()
+             breedViewModel.getBreeds(endPoint: BreedEndPoint())
          }
      }
 }

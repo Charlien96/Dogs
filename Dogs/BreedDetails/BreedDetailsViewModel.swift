@@ -18,36 +18,28 @@ class BreedDetailsViewModel: ObservableObject {
         self.httpClient = httpClient
     }
     
-    func getBreedDetails(breed: Breed) {
-        let endPoint = BreedDetailsEndPoint(breedName: breed.name)
-    
+    func getBreedDetails(endPoint: BreedDetailsEndPoint) {
         Task {
             let result =   await httpClient.sendRequest(endpoint: endPoint, responseModel: BreedDetailsResopnse.self)
             
             switch result {
             case .success(let breedDetailsResponse):
-                breedDetail =    breedDetailsResponse.message  .map {
-                 BreedDetail(imageName: $0)
-                }
-            case .failure(let error ):
-                print( error)
+                breedDetail =    breedDetailsResponse.breedDetailsMapper()
+            case .failure(_):
+                breedDetail = []
             }
         }
     }
     
-    func getMoreBreedsImages(breed: Breed) {
-        let endPoint = BreedViewMoreEndPoint(breedName: breed.name)
-    
+    func getMoreBreedsImages(endPoint: BreedViewMoreEndPoint) {
         Task {
             let result =   await httpClient.sendRequest(endpoint: endPoint, responseModel: BreedDetailsResopnse.self)
             
             switch result {
             case .success(let breedDetailsResponse):
-                breedDetail =    breedDetailsResponse.message  .map {
-                 BreedDetail(imageName: $0)
-                }
-            case .failure(let error ):
-                print( error)
+                breedDetail =    breedDetailsResponse.breedDetailsMapper()
+            case .failure(let error):
+                print(error)
             }
         }
     }
